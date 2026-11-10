@@ -1,0 +1,7 @@
+ID,STRIDE category,Threat scenario,Asset affected,Impact,Likelihood,Risk,Mitigation,Validation evidence
+S-01,Spoofing,An attacker impersonates a legitimate test user,LAB-01,Unauthorized account access,Medium,Medium,Use strong authentication and secure session handling,Document approved test-account authentication checks
+T-01,Tampering,An unauthorized user changes stored application data,LAB-01,Loss of data integrity,Medium,High,Server-side validation and least-privilege database permissions,Record configuration review or safe test result
+R-01,Repudiation,A user denies performing a sensitive action,LAB-01,Weak accountability,Medium,Medium,Timestamped audit logs with protected access,Review sample audit events
+I-01,Information Disclosure,An application response exposes confidential data,LAB-01,Privacy and confidentiality loss,Medium,High,Minimize data, enforce authorization, encrypt sensitive data,Review responses using dummy data only
+D-01,Denial of Service,Excessive requests make the lab service unavailable,LAB-01,Loss of availability,Low,High,Rate limits and resource controls; do not perform DoS testing,Review configuration only; no load test
+E-01,Elevation of Privilege,A normal user gains an administrator-only capability,LAB-01,Unauthorized privileged access,Medium,High,Server-side role checks and least privilege,Review roles and approved access-control tests
